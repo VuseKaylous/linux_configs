@@ -142,6 +142,15 @@ source ~/.local/share/atuin/init.nu
 
 # add to PATH
 $env.PATH = ($env.PATH | split row (char esep) | append "~/.config/emacs/bin" | append "~/.cargo/bin")
+# $env.EDITOR = "/usr/bin/nvim"
+$env.EDITOR = ("/usr/bin/nvim")
+$env.RANGER_LOAD_DEFAULT_RC = FALSE
+# $env.GTK_IM_MODULE=ibus
+# $env.XMODIFIERS=@im=ibus
+# $env.QT_IM_MODULE=ibus
+
+# $env.OLLAMA_HOST = 0.0.0.0
+
 
 # zoxide
 source ~/.zoxide.nu
@@ -156,7 +165,7 @@ use ~/.cache/starship/init.nu
 alias l = ls
 alias c = clear
 alias v = nvim
-alias j = joshuto
+alias j = ranger
 alias wifi = nmtui
 alias bt = blueman-manager  
 alias e = exit
